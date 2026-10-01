@@ -1,0 +1,550 @@
+```css
+/* METRICS AND PARAMETERS CONFIGURED TO MATCH YOUR ORIGINAL SITES DEPTH AND MARGINS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #060b13; /* Pure dark navy blue portfolio background */
+    color: #94a3b8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* HEADER NAVIGATION ELEMENTS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 6%;
+    background-color: #060b13;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.section-label {
+    color: #38bdf8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* 1. HERO LAYOUT ELEMENTS (Image 1) */
+.hero-section {
+    padding-top: 50px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.avatar-ring {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #060b13;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-title h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.highlight-text {
+    color: #38bdf8;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.main-heading {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.institution-block {
+    margin-bottom: 36px;
+}
+
+.institution {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.school {
+    color: #64748b;
+}
+
+/* ACTION CALL CONTROLS */
+.hero-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    border-radius: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn i {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-whatsapp {
+    background-color: #10b981; 
+    color: #ffffff !important;
+    border: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #23354f;
+}
+
+/* 2. ABOUT SPLIT GRID COLUMNS (Image 2) */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    color: #94a3b8;
+    line-height: 1.75;
+}
+
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #0f172a; /* Slate dark block panels */
+    border: 1px solid #1e293b;
+    padding: 18px 24px;
+    border-radius: 12px;
+}
+
+.card-icon-wrapper {
+    color: #38bdf8;
+    width: 36px;
+    height: 36px;
+    background-color: #1e293b;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon-wrapper i {
+    width: 18px;
+    height: 18px;
+}
+
+.card-label {
+    font-size: 0.7rem;
+    color: #64748b;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.card-content p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* 3. SKILLS COMPONENT CAPSULES (Image 3) */
+.featured-skill-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 20px 24px;
+    border-radius: 14px;
+    margin-bottom: 28px;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.status-badge {
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+}
+
+.skills-pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Pill design from layout 3 */
+.skill-pill {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    color: #cbd5e1;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-pill i {
+    width: 14px;
+    height: 14px;
+    color: #38bdf8;
+}
+
+/* 4. PROJECTS TILES ARCHITECTURE (Image 4) */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 28px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.project-icon-top {
+    color: #38bdf8;
+    margin-bottom: 16px;
+}
+
+.project-icon-top i {
+    width: 22px;
+    height: 22px;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #1e293b;
+    color: #38bdf8;
+    font-size: 0.75rem;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* 5. BRAND PROFILE CONNECTIONS SHIFT PANELS (Image 5) */
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.platform-card {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 24px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.platform-card:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+}
+
+.p-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+    color: #ffffff;
+}
+
+.p-icon i {
+    width: 20px;
+    height: 20px;
+}
+
+.whatsapp-bg { background-color: #128c7e; }
+.telegram-bg { background-color: #0088cc; }
+.email-bg { background-color: #ea4335; }
+.facebook-bg { background-color: #1877f2; }
+.x-bg { background-color: #111111; }
+.tiktok-bg { background-color: #000000; }
+
+.platform-card h4 {
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.p-sub {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* 6. INPUT MESSAGE CONTAINER BOX (Image 6) */
+.form-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 24px;
+}
+
+.form-paragraph {
+    margin: 14px 0 24px 0;
+    font-size: 1.05rem;
+}
+
+.w-fit { 
+    width: fit-content; 
+}
+
+.direct-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contact-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+}
+
+.contact-circle i {
+    width: 14px;
+    height: 14px;
+}
+
+.direct-contact-item span {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: bold;
+    display: block;
+}
+
+.direct-contact-item p {
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.form-box-side {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 36px;
+    border-radius: 14px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea {
+    background-color: #060b13;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 120px;
+}
+
+.btn-container {
+    width: 100%;
+}
+
+.btn-send {
+    background-color: #38bdf8; 
+    color: #060b13;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    float: right;
+}
+
+.btn-send i {
+    width: 12px;
+    height: 12px;
+}
+
+/* RESPONSIVE LAYOUT CONSTRAINTS */
+@media (max-width: 800px) {
+    .about-grid, .form-layout-grid { grid-template-columns: 1fr; gap: 36px; }
+    .form-row { grid-template-columns: 1fr; }
+    .main-heading { font-size: 2.4rem; }
+}
